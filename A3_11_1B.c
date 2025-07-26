@@ -2,13 +2,15 @@
 *
 * ASSIGNMENT 1B: Get and Set Environment Variables
 * ------------------------------------------------
-* Team          : 10
-* Date          : 23-July-2025
+# Group         : A3
+* Team          : 11
+* Date          : 26-July-2025
 *
 * Members:
-    # Roll Nos - 002311001064,002311001050,002311001039
-    # Names - Samiran Chakraborty,Afham Shakeel,Sayan Dutta
-*
+    * 1. Samiran Chakraborty      (Roll No: 002311001064)
+    * 2. Afham Shakeel            (Roll No: 002311001050)
+    * 3. Sayan Dutta              (Roll No: 002311001039)
+    
 ***********************************************************************************
 *
 * ASSIGNMENT DETAILS:
@@ -30,10 +32,10 @@
 ***********************************************************************************
 *
 * COMPILATION:
-* gcc -Wall A2_10_1B.c -o A2_10_1B
+* gcc -Wall A3_11_1B.c -o A3_11_1B
 *
 * EXECUTION:
-* ./A2_10_1B VAR1 val1 VAR2 val2
+* ./A3_11_1B VAR1 val1 VAR2 val2
 *
 ***********************************************************************************
 *
@@ -44,16 +46,19 @@
 *
 * --- Reading Environment Variables using getenv() ---
 *
-* USER = be2362
-* HOME = /home/usr/student/ug/yr23/be2362
+* USER = be2364
+* HOME = /home/usr/student/ug/yr23/be2364
 * HOST is not set.
 * ARCH is not set.
 * DISPLAY is not set.
 * PRINTER is not set.
-* PATH = /usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/usr/student/ug/yr23/be2362/.local/bin:/home/usr/student/ug/yr23/be2362/bin
-* VAR1=val1
-* VAR2=val2
-*/
+* PATH = /usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/usr/student/ug/yr23/be2364/.local/bin:/home/usr/student/ug/yr23/be2364/bin
+
+* Set environment variables:
+* -> COURSE = OS
+* -> ASSIGNMENT_NO = 1B
+*
+**********************************************************************************/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -95,5 +100,5 @@ int main(int argc, char *argv[]) {
     print_env_var(var1);
     print_env_var(var2);
 
-    return EXIT_SUCCESS;
+    return 0;
 }
